@@ -3,6 +3,7 @@ export const sidebarZh = [
         text: '使用技巧', collapsible: false, link: '/usage-tips/_usage-tips.md',
         children: [
             {text: '在 Mac 的终端中走 ClashX 代理', link: '/usage-tips/clash-x_in_mac.md', children: []},
+            {text: '在Git项目中使用代理的配置指南', link: '/usage-tips/git_use_proxy.md', children: []},
             {text: 'idea 在 Mac 中的快捷键', link: '/usage-tips/idea-in-mac-shortcut-keys.md', children: []},
             {text: '在win10/11中使用旧版图片查看器', link: '/usage-tips/win10_11-photo-viewer.md', children: []},
         ],
