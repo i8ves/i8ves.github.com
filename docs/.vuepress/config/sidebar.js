@@ -11,6 +11,7 @@ export const sidebarZh = [
         text: '技术开发', link: '/technology/_technology.md',
         children: [
             {text: 'Linux 常用命令', link: '/technology/linux_command.md'},
+            {text: 'Linux 查找文件内容', link: '/technology/linux_find-file-content_command.md'},
             {text: 'Docker 常用命令及示例', link: '/technology/docker_command.md'},
             {text: 'Nginx 常用命令及配置', link: '/technology/nginx_command.md'},
             {text: 'Node 常用命令及组件', link: '/technology/node_command.md'},
