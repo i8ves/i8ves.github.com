@@ -19,8 +19,12 @@ export default defineConfig({
         sidebar: [
             {
                 text: 'AI 设计',
+                collapsed: false,
                 items: [
                     {text: 'Ai Design', link: '/ai_design/_index'},
+                    {text: 'Midjourney 简单介绍', link: '/ai_design/mj_0introduce.md'},
+                    {text: 'Stable Diffusion 简单介绍', link: '/ai_design/sd_0introduce.md'},
+                    {text: 'Stable Diffusion 描述词', link: '/ai_design/sd_descriptor.md'},
                 ]
             },
             {
@@ -50,6 +54,7 @@ export default defineConfig({
 
             {
                 text: '其它文章',
+                collapsed: false,
                 items: [
                     {text: 'Mac 在终端中走 Proxy', link: '/uncharted/mac_clash-x'},
                     {text: 'Win10/11 使用旧版图片查看器', link: '/uncharted/win10_11-photo-viewer.md'},
@@ -78,7 +83,7 @@ export default defineConfig({
 
         footer: {
             message: 'Released under the MIT License.',
-            copyright: 'Copyright © 2019-present Evan You'
+            copyright: 'Copyright © 2024 <b>n1an.ico</b> 版权所有，保留所有权利'
         }
     }
 })
