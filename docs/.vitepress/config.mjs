@@ -5,19 +5,27 @@ export default defineConfig({
     title: "亿念",
     description: "亿念成魔，亿念成佛！",
     themeConfig: {
+        logo: '/favicon.ico',
         // https://vitepress.dev/reference/default-theme-config
         nav: [
-            {text: '网址首页', link: '/'},
-            {text: 'AI&设计', link: '/'},
-            {text: '软件开发', link: '/engineer/mac_dev-env'},
-            {text: '其它文章', link: '/uncharted/mac_clash-x'},
-            {text: '公网导航', link: '/navigation'},
-            {text: '关于本站', link: '/about'},
+            {text: '网址首页', link: '/', activeMatch: ''},
+            {text: 'AI&设计', link: '/ai_design/_index', activeMatch: '/ai_design/'},
+            {text: '软件开发', link: '/engineer/mac_dev-env', activeMatch: '/engineer/'},
+            {text: '其它文章', link: '/uncharted/mac_clash-x', activeMatch: '/uncharted/'},
+            {text: '公网导航', link: '/navigation', activeMatch: '/navigation'},
+            {text: '关于本站', link: '/about', activeMatch: '/about'},
         ],
 
         sidebar: [
             {
+                text: 'AI 设计',
+                items: [
+                    {text: 'Ai Design', link: '/ai_design/_index'},
+                ]
+            },
+            {
                 text: '软件开发',
+                collapsed: false,
                 items: [
                     {text: 'Docker 中的常见命令', link: '/engineer/docker_command.md'},
                     {text: 'Git 在本项目中走 Proxy', link: '/engineer/git_use_proxy.md'},
@@ -49,8 +57,22 @@ export default defineConfig({
             },
         ],
 
+
         socialLinks: [
             {icon: 'github', link: 'https://github.com/vuejs/vitepress'}
-        ]
+        ],
+
+        lastUpdated: {
+            text: '上次更新',
+            formatOptions: {
+                dateStyle: 'full',
+                timeStyle: 'medium'
+            }
+        },
+
+        footer: {
+            message: 'Released under the MIT License.',
+            copyright: 'Copyright © 2019-present Evan You'
+        }
     }
 })
