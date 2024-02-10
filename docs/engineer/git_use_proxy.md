@@ -45,7 +45,7 @@ git config --get https.proxy
 
 现在，你可以使用代理进行 Git 操作了。在进行 Git 操作时，Git 会使用项目级别的代理设置。
 
-### 提交代码：
+- 提交代码：
 
 ```bash
 git add .
@@ -53,7 +53,7 @@ git commit -m "Your commit message"
 git push origin master
 ```
 
-### 拉取代码：
+- 拉取代码：
 
 ```bash
 git pull origin master

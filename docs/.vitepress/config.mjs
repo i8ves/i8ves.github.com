@@ -59,8 +59,14 @@ export default defineConfig({
 
 
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/vuejs/vitepress'}
+            {icon: 'github', link: 'https://github.com/vuejs/vitepress'},
+            {icon: 'twitter', link: '...'},
         ],
+
+        outline: {
+            level: 'deep',
+            label: '文章大纲'
+        },
 
         lastUpdated: {
             text: '上次更新',
